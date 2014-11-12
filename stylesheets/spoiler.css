@@ -1,0 +1,29 @@
+/* Ocultar botón radio */
+input[id^="spoiler"]{
+	display: none;
+	margin-bottom:10px;
+}
+/* Estilo botón clicable */
+input[id^="spoiler"] + label {
+	padding: 5px 20px;
+	background: #999;
+	cursor: pointer;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 10px;
+}
+
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler"]:checked + label {
+	color: #333;
+	background: #ccc;
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler"] + label + .spoiler {
+	display: none;
+}
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler"]:checked + label + .spoiler{
+	margin: 10px auto;
+	display: inherit;
+}
