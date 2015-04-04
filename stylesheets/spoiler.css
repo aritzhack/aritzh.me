@@ -13,6 +13,11 @@ input[id^="spoiler"] + label {
 	margin: 10px;
 }
 
+input[id^="spoiler"] + label:hover {
+	background: #444444;
+	text-shadow: 1px 1px 0px #848484, 0.5px 0.5px 0px #848484;
+}
+
 /* Estilo botón cuando su INPUT está seleccionado */
 input[id^="spoiler"]:checked + label {
 	color: #333;
